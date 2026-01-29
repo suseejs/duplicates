@@ -1,64 +1,64 @@
 {
-	"name": "@suseejs/duplicates",
-	"version": "0.1.0",
-	"description": "Duplicate Handlers",
-	"type": "module",
-	"main": "dist/index.cjs",
-	"module": "dist/index.js",
-	"types": "dist/index.d.cts",
-	"exports": {
-		".": {
-			"require": {
-				"types": "./dist/index.d.cts",
-				"default": "./dist/index.cjs"
-			},
-			"import": {
-				"types": "./dist/index.d.ts",
-				"default": "./dist/index.js"
-			}
-		}
-	},
-	"scripts": {
-		"test": "tsx --test",
-		"build": "tsx opt/index.ts",
-		"fmt": "biome format --write",
-		"lint": "biome check src --write"
-	},
-	"repository": {
-		"type": "git",
-		"url": "git+https://github.com/suseejs/duplicates.git"
-	},
-	"keywords": [
-		"TypeScript"
-	],
-	"author": {
-		"name": "Pho Thin Mg",
-		"email": "phothinmg@disroot.org",
-		"url": "https://phothinmg.github.io/"
-	},
-	"license": "Apache-2.0",
-	"bugs": {
-		"url": "https://github.com/suseejs/duplicates/issues"
-	},
-	"homepage": "https://github.com/suseejs/duplicates#readme",
-	"dependencies": {
-		"@phothinmaung/resolves": "^1.0.0",
-		"@suseejs/transformer": "^0.1.0",
-		"@suseejs/types": "^0.1.1",
-		"typescript": "^5.9.3"
-	},
-	"devDependencies": {
-		"@biomejs/biome": "^2.3.13",
-		"@types/node": "^25.1.0",
-		"tsx": "^4.21.0"
-	},
-	"files": [
-		"dist",
-		"LICENSE",
-		"README.md",
-		"package.json"
-	],
-	"publishConfig": {
-		"access": "public"
-	}
+  "name": "@suseejs/duplicates",
+  "version": "0.1.0",
+  "description": "Duplicate Handlers",
+  "type": "module",
+  "main": "dist/index.cjs",
+  "module": "dist/index.mjs",
+  "types": "dist/index.d.cts",
+  "exports": {
+    ".": {
+      "require": {
+        "types": "./dist/index.d.cts",
+        "default": "./dist/index.cjs"
+      },
+      "import": {
+        "types": "./dist/index.d.mts",
+        "default": "./dist/index.mjs"
+      }
+    }
+  },
+  "scripts": {
+    "test": "tsx --test",
+    "build": "tsx opt/index.ts",
+    "fmt": "biome format --write",
+    "lint": "biome check src --write"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/suseejs/duplicates.git"
+  },
+  "keywords": [
+    "TypeScript"
+  ],
+  "author": {
+    "name": "Pho Thin Mg",
+    "email": "phothinmg@disroot.org",
+    "url": "https://phothinmg.github.io/"
+  },
+  "license": "Apache-2.0",
+  "bugs": {
+    "url": "https://github.com/suseejs/duplicates/issues"
+  },
+  "homepage": "https://github.com/suseejs/duplicates#readme",
+  "dependencies": {
+    "@phothinmaung/resolves": "^1.0.0",
+    "@suseejs/transformer": "^0.1.0",
+    "@suseejs/types": "^0.1.1",
+    "typescript": "^5.9.3"
+  },
+  "devDependencies": {
+    "@biomejs/biome": "^2.3.13",
+    "@types/node": "^25.1.0",
+    "tsx": "^4.21.0"
+  },
+  "files": [
+    "dist",
+    "LICENSE",
+    "README.md",
+    "package.json"
+  ],
+  "publishConfig": {
+    "access": "public"
+  }
 }
